@@ -17,3 +17,17 @@ for (let i = original.length - 1; i >= 0; i--) {
 console.log('%cReverse String using for loop: ','font-weight:bold');
 console.log('%cOriginal String is: ','font-weight:bold',original);
 console.log('%cReversed String is: ','font-weight:bold', reversed);
+
+//2. Fizz - Buzz
+let cvar = 15;
+
+console.log(cvar);
+console.log(takeNumber(cvar));
+
+function takeNumber(x){
+//console.log(x);
+if(x % 15 == 0){return 'FizzBuzz';}
+else if(x % 3 == 0){return 'Fizz';}
+else if(x % 5 == 0 ){return 'Buzz';}
+else { return x;}
+}
