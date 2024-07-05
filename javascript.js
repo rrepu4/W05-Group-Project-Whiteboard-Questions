@@ -145,3 +145,25 @@ function moveNumbersBack(list, word) {
      console.log(evens.concat(odds));
     }
   }
+
+  // 6. Word counter
+
+let stringa = ['Zebra','Lion','Elephant','Tiger','Fox','Zebra'];
+let stringb = "Zebra";
+let wordCount = 0;
+countWordMatches(stringa, stringb);
+function countWordMatches(arrayToCheck,wordToCheck){
+
+    for (let i = 0; i < arrayToCheck.length; i++) {
+        if (arrayToCheck[i] == wordToCheck) {
+            wordCount++;
+        }
+    }
+    return wordCount;
+
+}
+
+console.log('\n');
+console.log('Array to Check: ',stringa);
+console.log('Word to Check: ',stringb);
+console.log(wordCount);
