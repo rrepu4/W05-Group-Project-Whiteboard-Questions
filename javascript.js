@@ -166,4 +166,27 @@ function countWordMatches(arrayToCheck,wordToCheck){
 console.log('\n');
 console.log('Array to Check: ',stringa);
 console.log('Word to Check: ',stringb);
-console.log(wordCount);
+console.log('Word Count is: ',wordCount);
+
+
+//7. Add up numbers
+let num1 = 6;
+let sum = 0;
+additUP(num1);
+
+function additUP(num3){
+    
+
+  for (let i = 1; i <= num3; i++) {
+    sum += i;
+  }
+  
+  return sum;
+
+
+}
+console.log('\n');
+console.log('%cAdd up the Numbers','font-weight:bold');
+console.log('Number entered is: ',num1);
+console.log('Sum of Numbers is: ',sum);
+
