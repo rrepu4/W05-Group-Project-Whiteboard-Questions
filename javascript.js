@@ -49,3 +49,59 @@ else { return false;}
 }
 
 // 4. BLT
+//let ingredientsArray = ['bread','bacon','lettuce','tomatoes','onions','bread'];
+let ingredients1 = ['bread','bacon','lettuce','tomatoes','onions','bread'];
+
+console.log('The ingredients are:');
+for (let i=0; i < ingredients1.length; i++)
+    {
+         console.log(i+1+'. '+ingredients1[i]);
+    }
+    //console.log('Total ingredients ', ingredients1.length);
+    console.log('\n');
+    let ivar = 0;
+    Hasbreadbothsides(ingredients1);
+
+  
+    function Hasbreadbothsides(ingredients4){
+       // console.log('is BLT?');
+//console.log(ingredients4[0]);
+//console.log(ingredients4[ingredients4.length - 1]);
+
+
+        if(ingredients4[0] === "bread" && ingredients4[ingredients4.length - 1] === "bread"){
+           // console.log('Has first and last item as bread');
+            isBLT(ingredients4);
+        }
+
+    }
+   
+    function isBLT(ingredients5)
+    {
+        for (let item of ingredients5) {
+
+         
+            if (item === "bacon") {
+               // console.log('has bacon');
+                ivar++;
+              }
+              else if (item === "lettuce") {
+               // console.log('has lettuce');
+                ivar++;
+              }
+              else if (item === "tomatoes") {
+               // console.log('has tomatoes');
+                ivar++;
+              }
+            
+        }
+        
+//console.log(ivar);
+    }
+    //console.log(ivar);
+    if (ivar == 3){
+        console.log('%cis a BLT Sandwich', 'color:grey');
+    }
+    else{
+        console.log('%cIS NOT A BLT Sandwich','color:red');
+    }
