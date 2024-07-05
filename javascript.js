@@ -105,3 +105,43 @@ for (let i=0; i < ingredients1.length; i++)
     else{
         console.log('%cIS NOT A BLT Sandwich','color:red');
     }
+
+
+    // 5. move odd numbers back
+    let arraynumbers = ['0','6','3','1','4'];
+
+
+    console.log('\n');
+    console.log(arraynumbers);
+
+moveNumbersBack(arraynumbers, 'even');
+
+function moveNumbersBack(list, word) {
+    let odds = [];
+    let evens = [];
+
+    for (num of list) {
+      if (num%2 === 0) {
+        evens.push(num);
+        //console.log(evens);
+      } else {
+        odds.push(num);
+        //console.log(odds);
+      }
+    }
+
+    //console.log(odds);
+    //console.log(evens);
+
+    if (word == 'odd') {
+      //return [...evens, ...odds];
+ 
+      odds.concat(evens);
+    // console.log(odds);
+     console.log(odds.concat(evens));
+    } else {
+      //return [ ...odds, ...evens];
+     // console.log(evens);
+     console.log(evens.concat(odds));
+    }
+  }
